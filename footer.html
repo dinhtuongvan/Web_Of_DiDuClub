@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./access/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./access/fonts/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="preconnect" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese">
+    <link rel="preload" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./font/beyond_the_mountains.ttf">
+    <title>Footer</title>
+
+    <style>
+.footer{
+    margin-top: 17px;
+    padding: 81px 0 104px;
+    width: 100%;
+    height: 504px;
+    background-color: #000;
+}
+
+.footer__item{
+
+}
+
+.footer__item-wrap{
+
+}
+
+.footer__item-logo{
+
+}
+
+.footer__item-img{
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.footer__item-logo-text{
+
+}
+
+.footer__item-text{
+    font-family: Quicksand;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.5;
+    font-weight: 600;
+    max-width: 250px;
+}
+
+.footer__social-item{
+    display: flex;
+}
+
+.footer__social-item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    border: solid 1px #fa9e1b;
+    border-radius: 50%;
+    margin: 19px 13px 0 0;
+}
+
+.footer__social-item-link:hover{
+    background-color: #fa9e1b;
+}
+
+.footer__social-icon{
+    color: #fff;
+}
+
+.footer__item-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin: 34px 0 43px;
+}
+
+.footer__blog-wrap{
+
+}
+
+.footer__blog-item{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.footer__blog-item-img{
+    
+}
+
+.footer__blog-item-content{
+    margin: 0 0 10px 0;
+}
+
+.footer__blog-item-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer__blog-item-text:hover,
+.footer__item-contact-info-text:hover{
+    color: #fa9e1b;
+}
+
+.footer__blog-item-date{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fa9e1b;
+    margin: 15px 0 0;
+}
+
+.footer__item-tag-wrap{
+
+}
+
+.footer__item-tag-list{
+
+}
+
+.footer__item-tag-component{
+    float: left;
+    margin:0 9px 9px 0;
+    height: 33px;
+    border: solid 1px #fff;
+    list-style: none;
+}
+
+.footer__item-tag-component:hover{
+    background-color: #fff;
+}
+
+.footer__item-tag-component:hover .footer__item-tag-component-link{
+    color: #000;
+}
+
+
+.footer__item-tag-component-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+}
+
+.footer__item-contact-info-wrap{
+
+}
+
+.footer__item-contact-info-item{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.footer__item-contact-info-img{
+    width: 20px;
+    height: 20px
+}
+
+.footer__item-contact-info-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 14px;
+}
+
+/* Sub-footer */
+
+.sub-footer{
+    background: #000;
+    width: 100%;
+    height: 52px;
+}
+
+.sub-footer-wrap{
+    height: 100%;
+}
+
+.sub-footer-container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-footer__copy-right{
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    height: 36px;
+    font-family: Quicksand;
+}
+
+.sub-footer__copy-right-name{
+    text-decoration: none;
+    color: #007bff;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sub-footer__copy-right-name:hover{
+    color: #005696;
+}
+
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="grid wide footer-wrap">
+            <div class="row">
+                <div class="col l-3 footer__item">
+                    <div class="footer__item-wrap">
+                        <div class="footer__item-logo">
+                            <img src="./access/Img/logo_DC.png" alt="" class="footer__item-img">
+                        </div>
+                        <div class="footer__item-text">
+                            DiDu Club - Thời trang local brand sáng tạo dành riêng cho giới trẻ. Các bộ sưu tập mới được đông đảo giới trẻ đón nhận để tô thêm sắc màu cá tính cho mình mỗi ngày xuống phố. 
+                        </div>
+
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-pinterest footer__social-icon" ></i>
+                                    </a>
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-facebook-f footer__social-icon"></i>
+                                    </a>
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-twitter footer__social-icon" ></i>
+                                    </a>
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-linkedin-in footer__social-icon"></i>
+                                    </a>
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-behance footer__social-icon"></i>
+                                    </a>
+                                    <a href="" class="footer__social-item-link">
+                                        <i class="fab fa-instagram footer__social-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 footer__item">
+                    <div class="footer__item-wrap">
+                        <div class="footer__item-title">
+                            TAGS
+                        </div>
+
+                        <div class="footer__item-tag-wrap">
+                            <ul class="footer__item-tag-list">
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Didu Club</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Fashion</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Local Brand</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Kaki</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">T-shirt</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Trousers</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Baggy</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Jeans</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Hoodie</a>
+                                </li>
+                                <li class="footer__item-tag-component">
+                                    <a href="#" class="footer__item-tag-component-link">Sweater</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 footer__item">
+                    <div class="footer__item-wrap">
+                        <div class="footer__item-title">
+                            HỖ TRỢ
+                        </div>
+
+                        <!-- Footer blog item -->
+                        <div class="footer__blog-wrap">
+
+                            <!-- Footer blog item 1-->
+                            <div class="footer__blog-item">
+                                <img src="./assets/img/footer_blog_1.jpg" alt="" class="footer__blog-item-img">
+                                <div class="footer__blog-item-content">
+                                    <div class="footer__blog-item-text">
+                                        FAQ - Hỏi đáp
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+
+                        <!-- Footer blog item 2-->
+                        <div class="footer__blog-wrap">
+                            <div class="footer__blog-item">
+                                <img src="./assets/img/footer_blog_2.jpg" alt="" class="footer__blog-item-img">
+                                <div class="footer__blog-item-content">
+                                    <div class="footer__blog-item-text">
+                                        Chính sách vận chuyển
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+
+                        <!-- Footer blog item 3-->                            
+                        <div class="footer__blog-wrap">
+                            <div class="footer__blog-item">
+                                <img src="./assets/img/footer_blog_3.jpg" alt="" class="footer__blog-item-img">
+                                <div class="footer__blog-item-content">
+                                    <div class="footer__blog-item-text">
+                                        Hướng dẫn thanh toán
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+
+                        <div class="footer__blog-wrap">
+                            <div class="footer__blog-item">
+                                <img src="./assets/img/footer_blog_3.jpg" alt="" class="footer__blog-item-img">
+                                <div class="footer__blog-item-content">
+                                    <div class="footer__blog-item-text">
+                                        Quy định đổi trả
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 footer__item">
+                    <div class="footer__item-wrap">
+                        <div class="footer__item-title">
+                            CONTACT INFO
+                        </div>
+
+                        <div class="footer__item-contact-info-wrap">
+                            <div class="footer__item-contact-info-item">
+                                <i class="fa-thin fa-location-dot"></i>
+                                <div class="footer__item-contact-info-text">                                        
+                                    669 QL1A, khu phố 3, Thủ Đức
+                                </div>
+                            </div>
+                            <div class="footer__item-contact-info-item">
+                                
+                                <div class="footer__item-contact-info-text">                                        
+                                    +84 1234 56 789
+                                </div>
+                            </div>
+                            <div class="footer__item-contact-info-item">
+                                
+                                <div class="footer__item-contact-info-text">                                        
+                                    didu.club@gmail.com
+                                </div>
+                            </div>
+                            <div class="footer__item-contact-info-item">
+                                
+                                <div class="footer__item-contact-info-text">                                                                                
+                                    www.diduclub.com
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <div class="grid wide sub-footer-wrap">   
+            <div class="sub-footer-container">
+                <div class="sub-footer__copy-right">
+                    Copyright ©2022 All rights reserved | This template is made with
+                    <i class="far fa-heart"></i> by 
+                    <a href="" class="sub-footer__copy-right-name">Dinh Tuong Van</a>
+                </div>
+
+            </div>        
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./access/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="preconnect" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese">
+    <link rel="preload" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" as="style">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./font/beyond_the_mountains.ttf">
+    <title>Header</title>
+
+    <style>
+
+.main{
+    top: 0;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+}
+
+        /* pre-header */
+.pre-header{
+    
+    width: 100%;
+    height: 36px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    animation: opacity ease 2s;
+    /* transition: transform ease-in-out 0.5s; */
+}
+
+.pre-header-scrolled{
+   /* transform: translateY(-100%); */
+}
+
+.pre-header__wrap{
+   display: flex;
+   align-items: center;
+   width:100%;
+   height: 100%;
+   justify-content: space-between;
+   margin:  0 200px 0 200px;
+
+}
+
+.pre-header__contact{
+    display: flex;
+    align-items: center;
+}
+.pre-header__phone{
+    color: #fff;
+    font-size: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.pre-header__social-list{
+    
+    list-style: none;
+    
+}
+
+.pre-header__social-item{
+    display: flex;
+}
+
+.pre-header__social-item-link{
+   padding: 12px;
+}
+
+.pre-header__social-icon{
+    height: 12px;
+    display: block;
+    color: #fff;
+}
+
+
+.pre-header__account{
+    display: flex;
+    justify-content: flex-end;
+}
+.pre-header__log-in, 
+.pre-header__register{
+    color: #fff;
+    font-size: 10px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.pre-header__log-in:hover, 
+.pre-header__register:hover,
+.pre-header__social-item-link:hover .pre-header__social-icon{
+    color: #fa9e1c;
+}
+
+/* header */
+
+.header{
+    background: #00000030;
+    display: block;
+    width: 100%;
+    height: 145px;
+}
+
+.header-scrolled {
+    background: rgba(0, 0, 0, 0.497);
+    transform: translateY(-36px);
+    transition: transform ease-in-out 0.1s;
+}
+.header__wrap{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_logo{
+
+}
+.header__logo-img{
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+/* Header navigation */
+.header__navi{
+    margin: 0 100px;
+}
+.header__navi-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header__navi-item{
+    margin-left: 30px;
+}
+
+.header__navi-item-link:hover{
+    color: #000;
+}
+
+@keyframes Active-nav {
+    from{
+        opacity: 0;
+    }
+     
+    to{
+        opacity: 1;
+    }
+}
+
+.header__navi-item:hover .header__navi-item-link::after {
+    display: block;
+    animation: Active-nav linear 0.3s;
+}
+
+.header__navi-item-link::after{ 
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    display: none;
+    height: 2px;
+    width: calc(100% + 2px);
+    background: #000;
+}
+
+.header__navi-item-link{
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #f4f4f8;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.header__icon-wrap{
+    display: flex;
+}
+.header__icon-img{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.header__icon-link{
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pre-header" id="1">
+            <div class="pre-header__wrap">
+                <div class="pre-header__contact">
+                    <div class="pre-header__phone">+45 345 3324 56789</div>
+                    <div class="pre-header__social">
+                        <ul class="pre-header__social-list">
+                            <li class="pre-header__social-item">
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-pinterest pre-header__social-icon" ></i>
+                                </a>
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-facebook-f pre-header__social-icon"></i>
+                                </a>
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-twitter pre-header__social-icon" ></i>
+                                </a>
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-linkedin-in pre-header__social-icon"></i>
+                                </a>
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-behance pre-header__social-icon"></i>
+                                </a>
+                                <a href="" class="pre-header__social-item-link">
+                                    <i class="fab fa-instagram pre-header__social-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pre-header__account">
+                    <a href="" class="pre-header__log-in">Login</a>
+                    <a href="" class="pre-header__register">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="header" id="2">
+            <div class="grid wide header__wrap">
+                <div class="header_logo">
+                    <img src="./access/Img/logo_DC.png" alt="" class="header__logo-img">
+                </div>
+                <div class="header__navi">
+                    <ul class="header__navi-list">
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Trang chủ</a>
+                        </li>
+
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Sản phẩm</a>
+                        </li>
+
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Blog</a>
+                        </li>
+
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Khuyến mãi</a>
+                        </li>
+
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Giới thiệu</a>
+                        </li>
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-item-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__icon">
+                    <div class="header__icon-wrap">
+                        <div class="header__icon-img">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x header__icon-link"></i>
+                        </div>
+                        <div class="header__icon-img">
+                            <i class="fa-sharp fa-solid fa-cart-shopping fa-2x header__icon-link"></i>
+                        </div>
+                        <div class="header__icon-img">
+                            <i class="fa-solid fa-user fa-2x header__icon-link"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
