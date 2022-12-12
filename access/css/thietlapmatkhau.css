@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 body {
-    background: linear-gradient(to right, #724f36e4, #D2BEB4);
+    background: linear-gradient(to right, #000, #fff);
     font-size: 1.6rem;
     overflow-x: hidden;
 }

@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right,#724f36e4, #D2BEB4);
+    background: linear-gradient(to right,#000, #fff);
     font-size: 1.6rem;
 }
 input{
@@ -199,20 +199,12 @@ input[type='radio']{
 
 .login-card .button {
     display: flex;
-    /* background: #6B4932;
-    border: none;
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: background .5s; */
+    
 }
 
 button {
     flex: 1;
-    background: #6B4932;
+    background: #000;
     border: none;
     color: white;
     padding: 1rem;
