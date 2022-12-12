@@ -1,3 +1,4 @@
+
 // hiện header khi scoll lên
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -303,4 +304,19 @@ function toThanhToan(){
   }else{
     alert("Bạn chưa đăng nhập")
   }
+}
+
+//chuyển động header
+
+window.onscroll = () => {
+  let pre_header = document.getElementsByClassName("pre-header")
+  let header = document.getElementsByClassName("header")
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      pre_header[0].classList.add('pre-header-scrolled')
+      header[0].classList.add('header-scrolled')
+      }
+  else {
+      pre_header[0].classList.remove('pre-header-scrolled')
+      header[0].classList.remove('header-scrolled')
+       }
 }

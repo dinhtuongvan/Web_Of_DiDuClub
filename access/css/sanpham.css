@@ -16,16 +16,21 @@
 /* body */
 
 .body{
-    margin-top: 92px;
+    margin-top: 200px;
 }
 u{
     margin: 0 2px;
 }
 .breadcrumb{
+    width: 20%;
     background-color: var(--black);
     padding: 5px ;
     font-size: 12px;
     padding-left: 70px;
+}
+
+.breadcrumb-item.active{
+    color: papayawhip;
 }
 .breadcrumb>li{
     font-size: 1.2rem;
@@ -76,10 +81,12 @@ li{
 }
 #btn_list{
     border: none;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
     padding: 10px 20px;
+    margin-right: 55px
 
 }
 #btn_list:hover{
@@ -301,6 +308,10 @@ li{
     line-height: 1.3rem;
     color: var(--white-color);
     font-weight: 600;
+}
+
+.container-fluid--wrap{
+    margin-bottom: 100px;
 }
 @media (max-width: 1023px) and (min-width: 740px) {
     .body{

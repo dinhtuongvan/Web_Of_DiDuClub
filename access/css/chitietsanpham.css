@@ -1,5 +1,5 @@
 .body{
-  margin-top: 92px;
+  margin-top: 200px;
 }
 .item {
   border: 2px solid #ccc;
@@ -15,6 +15,7 @@ a{
   border: 2px solid #343434;
 }
 .breadcrumb{
+  display: none;
   background-color: var(--black);
   padding: 5px ;
   font-size: 12px;
@@ -67,7 +68,7 @@ a{
   border-radius: 20px;
   font-size: 1.6rem;
   font-weight: 600;
-  background-color: var(--btn-color);
+  background-color: #000;
   color: #fff;
 }
 
@@ -115,7 +116,7 @@ a{
   align-items: center;
 }
 .product__btn-add{
-  background-color: var(--background-color);
+  background-color: #000;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
@@ -124,7 +125,7 @@ a{
   flex: 1;
 }
 .product__btn-add:hover{
-  background-color: var(--btn-color);
+  opacity: 0.8;
 
 }
 .product__liked{
@@ -137,10 +138,10 @@ a{
   margin-left: 10px;
   justify-content: center;
   align-items: center;
-  color: var(--background-color);
+  color: #000;
 }
 .product__liked:hover{
-  color: var(--btn-color);
+  color: #ee4d2d;
   cursor: pointer;
 }
 .product__description-container{
@@ -402,7 +403,7 @@ a{
 /* Relative product */
 .relative-product-container {
   text-align: center;
-  margin-top: 80px;
+  margin: 45px 0 90px;
 }
 .relative-product-container h2{
   font-weight: 700;
@@ -411,15 +412,18 @@ a{
   justify-content: center;
 }
 
-.footer{
-  width: 100%;
+.footer__social-list{
+  padding-left: 0;
+}
+/* .footer{
+  width: 100%; */
   /* padding: 20px 120px 0; */
-  background-color: var(--white-color);
-  padding: 20px 50px;
+  /* background-color: var(--white-color);
+  padding: 20px 50px; */
   /* position: relative;
   z-index: 2; */
-}
-.footer ul{
+/* } */
+/* .footer ul{
   list-style-type: none;
   padding: 0;
 }
@@ -443,7 +447,7 @@ a{
 }
 .footer__icon{
   margin: 10px;
-}
+} */
 
 
 /*---------------- RESPONSIVE ------------------------*/
