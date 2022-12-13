@@ -21,8 +21,8 @@ a{
 }
 .voucher-hot__header h1{
     padding: 22px  30px 22px 60px;
-    background-color: #E3D5CA;
-    color: #724F36;
+    background-color: #fff;
+    color: #000;
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 30px;
@@ -35,7 +35,7 @@ a{
 }
 .voucher-hot__100k{
     margin-top: 30px ;
-    border: 2px solid #724F36;
+    border: 2px solid #000;
 }
 
 .voucher-hot__100k-img{
@@ -52,14 +52,14 @@ a{
     font-weight: 500;
 }
 .voucher-hot__100k-save,.voucher-hot-save{
-    background-color: #724F36;
+    background-color: #000;
     border: none;
     padding: 3px;
     font-size: 1.6rem;
     color: #fff;
 }
 .voucher-hot{
-    border: 2px solid #724F36;
+    border: 2px solid #000;
     margin: 20px;
 }
 .voucher-hot-img{
@@ -83,8 +83,8 @@ a{
     font-size: 3.2rem;
 }
 .countDown-time-container{
-    background-color: var(--background-color);
-    color: #724F36;
+    background-color: black;
+    color: #000;
     margin: 2px;
 
 }
@@ -274,7 +274,7 @@ a{
     width: 40px;
     height: 36px;
     text-align: center;
-    background-color: var(--discount-color);
+    background-color: var(--discount-);
 
 }
 
@@ -306,7 +306,11 @@ a{
     margin-left: 50px;
 }
 .voucher-today-container{
+    border-style: dashed;
+    /* border-width: 40px; */
+    border: solid 3px black;
     margin-top: 30px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -314,7 +318,7 @@ a{
     padding: 5px;
 }
 .voucher-today{
-    border: 2px solid #B5838D;
+    border: 2px solid #fff;
     margin: 10px ;
 }
 .voucher-today__content h2{
@@ -324,7 +328,7 @@ a{
     font-size: 1.4rem;
 }
 .voucher-today-save{
-    background-color: #724F36;
+    background-color: #000;
     border: none;
     padding: 3px;
     font-size: 1.6rem;
