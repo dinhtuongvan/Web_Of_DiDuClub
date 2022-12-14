@@ -59,11 +59,21 @@ a{
     color: #fff;
 }
 .voucher-hot{
-    border: 2px solid #000;
+    padding: 12px;
+    border: 2px groove #000;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .voucher-hot-img{
-    padding: 20px 10px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voucher-hot-img-left{
+    margin-left:20px ;
 }
 .voucher-hot-save{
     padding: 2px 60px;
