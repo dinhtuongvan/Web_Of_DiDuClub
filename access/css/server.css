@@ -65,5 +65,9 @@ a{
 .form__guingay:active{
     opacity: 0.7;
     background-color: var(--darkpink);
-} 
+}
+
+.breadcrumb-item > a:hover{
+    color: #fff;
+}
 
