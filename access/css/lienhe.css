@@ -1,31 +1,19 @@
 * {
     margin-top: 0;
     padding: 0;
-    font-size: 1.6rem;;
+    font-size: 1.2rem;;
     font-family: Quicksand;
-}
-:root {
-    --darkpink: #b8a898;
-    --lightpink: #d2beb4;
-    --darkbrown: #6B4932;
-    --black: black;
-    --white: #ffffff;
-    --grey: #ADA9A9;
-    --red: rgb(233, 15, 15);
 }
 .form-control{
     font-size: 1.6rem;
 }
 .breadcrumb{
-    background-color: var(--lightpink);
     padding: 5px ;
     font-size: 1.6rem;
     padding-left: 70px;
-    margin-top: 92px;
+    margin-top: 170px;
 }
-.breadcrumb>li a{
-    font-size: 1.2rem;
-}
+
 .breadcrumb>li{
     font-size: 1.2rem;
 }

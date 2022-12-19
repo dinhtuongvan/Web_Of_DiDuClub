@@ -255,6 +255,7 @@ a{
 
 .btn-header{
     border: none;
+    font-weight: bold;
     width: 170px;
     height: 40px;
     font-size: 15px;
@@ -311,7 +312,7 @@ a{
 .home-product-item__name{
     margin: 10px;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--text-color);
     line-height: 1.8rem;
     height: 3.6rem;
@@ -328,8 +329,8 @@ a{
 }
 
 .home-product-item__price-no-discount{
+    font-weight: bold;
     font-size: 1.6rem;
-    color: #666;
     margin-left: 5px;
 }
 
@@ -347,6 +348,7 @@ a{
 }
 
 .home-product-item__price-current{
+    font-weight: bold;
     font-size: 1.6rem;
     color: var(--red-color);
     margin-left: 5px;
@@ -469,8 +471,8 @@ a{
 /*--------------------- About us -----------------------------*/
 .info-text{
     font-size: 1.6rem;
-    line-height: 2.1rem;
-    padding:40px ;
+    line-height: 5rem;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
