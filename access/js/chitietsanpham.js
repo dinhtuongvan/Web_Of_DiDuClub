@@ -141,7 +141,7 @@ function LoadJson(){
                     document.getElementById("total_product").innerHTML=html;
                     
                     document.getElementById("product__btn-add").onclick=function(){
-                        if(sessionStorage.getItem('checkLogin')==1){
+
                             var productQuantity=Number.parseInt(amount);
                             var addSP = sessionStorage.getItem("Cart") ? JSON.parse(sessionStorage.getItem("Cart")) : [];
                             price = Number.parseInt(p.Price);
@@ -169,10 +169,8 @@ function LoadJson(){
                             }
                             sessionStorage.setItem("Cart",JSON.stringify(addSP));
                             console.log(sessionStorage.getItem("Cart",JSON.stringify(addSP)));
-                        }
-                        else{
-                            alert("Bạn chưa đăng nhập"); 
-                        }
+                       
+
 
                     }
                 }
