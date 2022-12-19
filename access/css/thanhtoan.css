@@ -11,7 +11,7 @@ textarea.form-control,input.form-control,select.form-select {
     text-align: right;
 }
 .body{
-    margin-top: 92px;
+    margin-top: 180px;
 }
 .col--left{
     padding-left: 70px;
@@ -55,6 +55,7 @@ a{
     text-align: right;
 }
 .button--gui{
+    margin-bottom: 20px;
     background-color: initial;
     text-align: center;
     font-weight: bold;
