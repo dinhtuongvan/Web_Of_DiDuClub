@@ -58,7 +58,7 @@ a{
 }
 /* Tên tài khoản */
 .myaccount-body{
-    margin-top: 20px;
+    margin-top: 200px;
     
 }
 .myaccount-body-left{
@@ -77,7 +77,8 @@ a{
 }
 .btn{
     width: 80%;
-    background-color: var(--lightpink);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
     text-align: left;
     font-size: 1.6rem;
     border: none;
@@ -96,7 +97,7 @@ a{
     cursor: pointer;
 }
 .content-detail:hover{
-    color: #a5704d;
+    color: #ccc;
 }
 .activeB{
     display: none;
@@ -122,7 +123,7 @@ a{
 }
 /* Hồ sơ của tôi */
 .luu2{
-    background-color: var(--lightpink);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     color: white;
     width: 20%;
@@ -161,7 +162,7 @@ margin-bottom: 10px;
 }
 .btn-Themdiachi{
     width: 80%;
-    background-color: var(--lightpink);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-size: 16px;
     margin-left: 10%;
@@ -284,7 +285,7 @@ margin-bottom: 10px;
 }
 .submit{
     width: 20%;
-    background-color: var(--lightpink);
+    background-color: rgb(0, 0, 0);
     border: 1px solid var(--lightpink);
     text-align: center;
 }
@@ -356,7 +357,7 @@ margin-bottom: 10px;
     text-align: center;
     color: white;
     padding: 5px;
-    background-color: var(--lightpink);   
+    background-color: rgb(0, 0, 0);   
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -378,7 +379,7 @@ margin-bottom: 10px;
     border: 1px solid rosybrown ;
 }
 .btn-viewdetail{
-    color: black;
+    
     width: 60%;
     text-align: center;
     margin-top: 6%;
