@@ -1,359 +1,749 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./access/css/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
-    <link rel="preconnect" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese">
-    <link rel="preload" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" as="style">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="./font/beyond_the_mountains.ttf">
-    <title>Header</title>
 
-    <style>
-
-.main{
-    top: 0;
-    position: fixed;
-    z-index: 11;
-    width: 100%;
-}
-
-        /* pre-header */
-.pre-header{
-    
-    width: 100%;
-    height: 36px;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    animation: opacity ease 2s;
-    /* transition: transform ease-in-out 0.5s; */
-}
-
-.pre-header-scrolled{
-   /* transform: translateY(-100%); */
-}
-
-.pre-header__wrap{
-   display: flex;
-   align-items: center;
-   width:100%;
-   height: 100%;
-   justify-content: space-between;
-   margin:  0 200px 0 200px;
-
-}
-
-.pre-header__contact{
-    display: flex;
-    align-items: center;
-}
-.pre-header__phone{
-    color: #fff;
-    font-size: 10px;
-    display: block;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-.pre-header__social-list{
-    margin: 0;
-    list-style: none;
-    
-}
-
-.pre-header__social-item{
-    display: flex;
-}
-
-.pre-header__social-item-link{
-   padding: 12px;
-}
-
-.pre-header__social-icon{
-    height: 12px;
-    display: block;
-    color: #fff;
-}
-
-
-.pre-header__account{
-    display: flex;
-    justify-content: flex-end;
-}
-.pre-header__log-in, 
-.pre-header__register{
-    color: #fff;
-    font-size: 10px;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-.pre-header__log-in:hover, 
-.pre-header__register:hover,
-.pre-header__social-item-link:hover .pre-header__social-icon{
-    color: #fa9e1c;
-}
-
-/* header */
-
-.header{
-    background: #0000008c;
-    display: block;
-    width: 100%;
-    height: 145px;
-}
-
-.header-scrolled {
-    background: #000;
-    transform: translateY(-36px);
-    transition: transform ease-in-out 0.1s;
-}
-.header__wrap{
-    display: flex !important;
-    align-items: center;
-    justify-content: space-around;
-}
-.header_logo{
-
-}
-.header__logo-img{
-    display: block;
-    width: 150px;
-    height: auto;
-}
-
-/* Header navigation */
-.header__navi{
-    width: 100%;
-    height: 100%;
-    margin: 0 100px;
-}
-.header__navi-list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.header__navi-item{
-    margin-left: 40px;
-}
-
-.header__navi-item:nth-child(2)::after{
-    top: 110px;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 50px;
-}
-
-.header__navi-item-link:hover{
-    color: #fff;
-}
-
-@keyframes Active-nav {
-    from{
-        opacity: 0;
-    }
-     
-    to{
-        opacity: 1;
-    }
-}
-
-.header__navi-item:nth-child(1):hover .header__navi-item-link::after,
-.header__navi-item:nth-child(3):hover .header__navi-item-link::after,
-.header__navi-item:nth-child(4):hover .header__navi-item-link::after,
-.header__navi-item:nth-child(5):hover .header__navi-item-link::after,
-.header__navi-item:nth-child(6):hover .header__navi-item-link::after {
-    display: block;
-}
-
-.header__navi-item:nth-child(2):hover .header__menu-wrap{
-    display: block;
-}
-
-.header__navi-item-link::after{ 
-    content: "";
-    position: absolute;
-    bottom: 2px;
-    display: none;
-    height: 2px;
-    width: calc(100% + 2px);
-    background: #fff;
-}
-
-.header__navi-item-link{
-    text-transform: uppercase;
-    padding: 15px 0;
-    font-size: 16px;
-    color: #f4f4f8;
-    text-decoration: none;
-    font-family: Quicksand;
-    font-weight: 700;
-    position: relative;
-}
-
-
-.header__icon-wrap{
-    display: flex;
-}
-.header__icon-img{
-    margin-left: 10px;
-    padding: 10px;
-}
-
-.header__icon-link{
-    color: #fff;
-}
-
-/* header menu */
-
-.header__menu-wrap{
-    display: none;
-    position: absolute;
-    top: 140px;
-    box-shadow: rgb(204, 204, 204) 0px 2px 10px;
-}
-.header__menu-list{
-    padding: 0;
-}
-.header__menu-item{
-    display: block;
-    width: 100%;
-    
-}
-.header__menu-item--link{
-    border-bottom: 1px solid rgb(241, 241, 241);
-    background: #fff;
-    color: #000;
-    font-size: 16px;
-    display: block;
-    text-decoration: none;
-    width: 150px;
-    height: 50px;
-    line-height: 40px;
-    text-align: center;
-}
-
-    </style>
-</head>
-<body>
-    <div class="main">
-        <div class="pre-header" id="1">
-            <div class="pre-header__wrap">
-                <div class="pre-header__contact">
-                    <div class="pre-header__phone">+45 345 3324 56789</div>
-                    <div class="pre-header__social">
-                        <ul class="pre-header__social-list">
-                            <li class="pre-header__social-item">
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-pinterest pre-header__social-icon" ></i>
-                                </a>
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-facebook-f pre-header__social-icon"></i>
-                                </a>
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-twitter pre-header__social-icon" ></i>
-                                </a>
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-linkedin-in pre-header__social-icon"></i>
-                                </a>
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-behance pre-header__social-icon"></i>
-                                </a>
-                                <a href="" class="pre-header__social-item-link">
-                                    <i class="fab fa-instagram pre-header__social-icon"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pre-header__account">
-                    <a href="" class="pre-header__log-in">Login</a>
-                    <a href="" class="pre-header__register">Register</a>
-                </div>
-            </div>
-        </div>
-        <div class="header" id="2">
-            <div class="grid wide header__wrap">
-                <div class="header_logo">
-                    <img src="./access/Img/logo_DC.png" alt="" class="header__logo-img">
-                </div>
-                <div class="header__navi">
-                    <ul class="header__navi-list">
-                        <li class="header__navi-item">
-                            <a href="./trangchu.html" class="header__navi-item-link">Trang chủ</a>
+ <nav class="header" id="header">
+    <div class="top_header">
+        <p><i class="fa-solid fa-truck"></i>  Miễn phí vận chuyển đơn từ 300k</p>
+    </div>
+    <div class="container-fluid   ">
+        <div class="header__container">
+            <div class="header__list">
+                <button class="header__list-icon" onclick="showHeaderList()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="header__list-container" class="header__list-container">
+                    <ul >
+                        <li><a href="./trangchu.html">Trang chủ</a></li>
+                        <li class="">
+                            <button class="header__list__sub-nav-link js-header__list__sub-nav-link" onclick="showSubnav()" >Sản Phẩm <i class="fa-solid fa-chevron-down"></i></button>
+                            <ul id="showSubnav" class="sub-nav-menu js-sub-nav-menu">
+                                <li><a class="sub-nav-item" href="./trangsp.html" onclick="toProductPage(0)">Quần</a></li>
+                                <li><a class="sub-nav-item" href="./trangsp.html" onclick="toProductPage(1)">Áo</a></li>
+                                <li><a class="sub-nav-item" href="./trangsp.html" onclick="toProductPage(2)">Phụ kiện</a></li>
+                                <li><a class="sub-nav-item" href="./trangsp.html" onclick="toProductPage(3)">Đầm</a></li>
+                            </ul>      
                         </li>
-
-                        <li class="header__navi-item">
-                            <a href="./sanpham.html" class="header__navi-item-link">Sản phẩm
-
-                                <div class="header__menu-wrap">
-                                    <ul class="header__menu-list">
-                                        <li class="header__menu-item">
-                                            <a href="" class="header__menu-item--link">Quần</a>
-                                        </li>
-                                        <li class="header__menu-item">
-                                            <a href="" class="header__menu-item--link">Áo</a>
-                                        </li>
-
-                                        <li class="header__menu-item">
-                                            <a href="" class="header__menu-item--link">Giày</a>
-                                        </li>
-                                        <li class="header__menu-item">
-                                            <a href="" class="header__menu-item--link">Nón</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="header__navi-item">
-                            <a href="./Blog.html" class="header__navi-item-link">Blog</a>
-                        </li>
-
-                        <li class="header__navi-item">
-                            <a href="./khuyenmai.html" class="header__navi-item-link">Khuyến mãi</a>
-                        </li>
-
-                        <li class="header__navi-item">
-                            <a href="./gioithieu.html" class="header__navi-item-link">Giới thiệu</a>
-                        </li>
-                        <li class="header__navi-item">
-                            <a href="./lienhe.html" class="header__navi-item-link">Liên hệ</a>
-                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="./khuyenmai.html">Khuyến mãi</a></li>
+                        <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="./lienhe.html">Liên hệ</a></li>
                     </ul>
                 </div>
-
-                <div class="header__icon">
-                    <div class="header__icon-wrap">
-                        <div class="header__icon-img">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x header__icon-link"></i>
-                        </div>
-                        <div class="header__icon-img">
-                            <i class="fa-sharp fa-solid fa-cart-shopping fa-2x header__icon-link"></i>
-                        </div>
-                        <div class="header__icon-img">
-                            <i class="fa-solid fa-user fa-2x header__icon-link"></i>
+            </div>
+            <div class="header__logo">
+                <a href="./trangchu.html">
+                    <img class="logo" src="./access/Img/Gap-Logo.webp" alt="">
+                </a>
+            </div>
+            <nav class="header__navbar">
+                    <ul >
+                        <li><a href="./trangchu.html">Trang chủ</a></li>
+                        <li>
+                            <div class="">
+                                <a href="./sanpham.html">Sản Phẩm <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="header__subnavbar">
+                                    <li><a class="header__subnavbar-item" href="./trangsp.html" onclick="toProductPage(0)">Quần</a></li>
+                                    <li><a class="header__subnavbar-item" href="./trangsp.html" onclick="toProductPage(1)">Áo</a></li>
+                                    <li><a class="header__subnavbar-item" href="./trangsp.html" onclick="toProductPage(2)">Phụ kiện</a></li>
+                                    <li><a class="header__subnavbar-item" href="./trangsp.html" onclick="toProductPage(3)">Đầm</a></li>
+                                </ul>   
+                            </div>  
+                        </li>
+                        <li><a href="./Blog.html">Blog</a></li>
+                        <li><a href="./khuyenmai.html">Khuyến mãi</a></li>
+                        <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="./lienhe.html">Liên hệ</a></li>
+                    </ul>
+            </nav>
+            <div class="header__icon">
+                <div class="header__icon-wrap">
+                    <div class="header__icon__search dropdown-center">
+                        <button class=" box-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 2.5rem" class="  fa-solid fa-magnifying-glass"></span>
+                        </button >
+                        <div class="dropdown-menu header__search ">
+                            <form action="./trangsp.html" method="get" class="" id="searchProduct">
+                                <h2>TÌM KIẾM</h2>
+                                <HR></HR>
+                                <div class="header__search__search-bar">
+                                    <input type="text" class="search-bar__input" placeholder="Tìm kiếm sản phẩm" id="search-bar__input" name="search-bar__input">
+                                    <button class="search-bar__btn" id="search-bar__btn" type="submit" onclick="pSearch()">
+                                        <i class="search-bar__icon  fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                    <div class="header__icon__login ">
+                        <button class="box-icon" onclick="showLogin()">
+                            <span style="font-size: 2.5rem" class="fa-solid fa-circle-user"></span>
+                        </button>
+                        <div id="header__login-container" class="header__login-container"></div>
+                    </div>
+                    <div class="header__icon__cart" id="header__icon__cart" >
+                        <button class="box-icon" onclick="showCart()" >
+                            <span style="font-size: 2.5rem" class="fa-solid fa-cart-shopping"></span>
+                        </button>
+                    </div>
+                    <div class="header__cart" id="header__cart">
+                        <h2>Giỏ hàng</h2> 
+                        <div class="header__cart-container" id="header__cart-container">
+                        </div>
+                        <div class="header__cart-money">
+                         <p>Tổng tiền</p>
+                         <p class="home-product-item__price-current" id="home-product-item__price-current"></p>
+                        </div>
+                        <div class="header__cart_container-btn">
+                         <button class="btn-header" onclick="toGioHang()"><a >Xem giỏ hàng</a></button>
+                         <button class="btn-header" onclick="toThanhToan()"><a >Thanh toán</a></button>
+                        </div>
+                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        
+        <div class="header__search-bar">
+            <input type="text" class="search-bar__input" id="search-bar__input1" placeholder="Tìm kiếm sản phẩm">
+            <button class="search-bar__btn" onclick="pSearch1()">
+                <i class="search-bar__icon  fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        
+    </div> 
+</nav>        
+<style>
+            /* ---------------------top header------------------ */
+
+.header__cart_container-btn  a{
+    color: #333;
+}
+.header__cart_container-btn a:hover  {
+    color: #fff;
+}
+.gg a{
+    color: #333;
+}
+.btn-header:hover a{
+    color:#fff
+}
+.fb a{
+    color: #333;
+}
+.btn-header:hover a{
+    color:#fff
+}
+.top_header{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-weight: 400;
+}
+.top_header p{
+    padding-top: 5px;
+}
+.home-product-item__price-current{
+    color: red;
+}
+
+
+
+/* header */
+.header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    background-color: var(--white-color);
+    transition: top 0.8s;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+/* ipad+ phonenave bar */
+.header__list-icon{
+    font-size: 28px;
+    color: var(--main-color);
+    padding: 0px 50px 0px 15px;
+
+}
+.header__list{
+    display: none
+}
+.header__list-container{
+    height: 800px;
+    width: 102%;
+    position: absolute;
+    background-color:var(--white-color);
+    top: 100%;
+    /* right: -5px; */
+    left: -7.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.header__list-container::before{
+    content: "";
+    border-width: 10px 10px;
+    border-style:  solid;   
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    left: 25px;
+    top: -20px;
+}
+.header__list-container ul{
+    list-style-type: none;
+    text-align: left;
+}
+.header__list-container a{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 10px 0px;
+    position: relative;
+    color:var(--main-color);
+    /* border-bottom: solid 0.5px var(--white-color); */
+    box-sizing: border-box;
+}
+.header__list button{
+    background-color: var(--white-color);
+    border: none;
+}
+.header__list-container button{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 10px 0px;
+    position: relative;
+    color:var(--main-color);
+    /* border-bottom: solid 0.5px var(--white-color); */
+    box-sizing: border-box;
+}
+.sub-nav-menu{
+    display: none;
+    padding-left: 40px;
+    border:  solid 0.5px var(--main-color);
+    border-radius: 20px;
+    transition: top 0.5s;
+}
+.activate{
+    display: block;
+}
+/* computer navbar */
+
+.header__navbar{
+    /* display: none; */
+}
+.header__navbar ul,.header__icon ul,
+.header__subnavbar{
+    list-style-type: none;
+    
+}
+
+ul{
+    display: block;
+}
+
+.header__subnavbar-item{
+    /* text-align: center; */
+    padding: 10px !important;
+
+}
+
+.header__subnavbar li::after{
+    content: "";
+    bottom:  0;
+    border-bottom: solid 2px #f5f7f8;
+}
+
+.header__navbar>ul>li a{
+    display: block;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 25px 0px;
+    margin: 0 12px;
+    position: relative;
+    color:var(--main-color);
+    /* border-bottom: solid 0.5px var(--white-color); */
+    box-sizing: border-box;
+}
+.header__navbar>ul>li button{
+    display: block;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 20px 0px;
+    position: relative;
+    color:var(--main-color);
+    /* border-bottom: solid 0.5px var(--white-color); */
+    box-sizing: border-box;
+}
+.header__navbar ul li a::after,
+.header__subnavbar-item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom:  0;
+    right: 0;
+    border-bottom: solid 2px #5c5c5c;
+    transition: 0.3s;
+}
+
+.header__navbar ul li a:hover::after,
+.header__subnavbar li button:hover::after{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.header__navbar ul{
+    padding-left: 0;
+    margin: 0
+}
+
+.header__navbar> ul >li{
+    position: relative;
+    float: none;
+    display: inline-block;
+}
+
+.header__subnavbar{
+    display: none;
+    width: 120px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    border: solid 1px var(--background-color);
+    border-top: var(--white-color);
+}
+
+.logo   {
+    max-width: 100%;
+    max-height: 72.5px;
+}
+
+.header__logo,.header__icon{
+    padding: 0 15px ;
+}
+
+.header__navbar li{
+    position: relative;
+    
+}
+
+.header__icon{
+    vertical-align: middle  ;
+}
+
+.header__icon-wrap{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.box-icon{
+    position: relative;
+    width: 32px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+    color: var(--main-color);
+    border: var(--white-color);
+    background-color: var(--white-color);
+}
+
+.header__navbar li:hover .header__subnavbar {
+    display: block;
+}
+/* search bar*/
+.header__search-bar{
+    display: none;
+    
+    /* display: flex; */
+    flex:1;
+    background-color: var(--white-color);
+    height:36px;
+    align-items: center;
+}
+.search-bar__input{
+    width: 100%;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 8px;
+    border-radius: 3px;
+}
+.search-bar__btn{
+    background-color: var(--main-color);
+    border: none;
+    height: 34px;
+    width: 60px;
+    border-radius: 3px;
+    outline: none;
+}
+.search-bar__btn:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+.search-bar__icon{
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+/* header search */
+.search{
+    position: absolute;
+    background-color: var(--white-color);
+}
+/* header login */
+#header__login-container{
+    display: none;
+}
+#header__login-container.activate{
+    display: block;
+}
+.header__icon__login{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login{
+    /* height: 435px; */
+    width: 400px;
+    position: absolute;
+    background-color:var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    left: -258px;
+    z-index: 1;
+}
+.header__login h2{
+    /* color: var(--main-color);
+    padding: 10px; */
+}
+.header__login p{
+    padding-bottom: 15px;
+}
+.header__login__nor{
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.14);
+    border-radius: 2px;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
+    margin-bottom: 10px;
+    display: flex;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    flex: 1;
+}
+.or{
+    color: #ccc;
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.header__or{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-header{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.26);
+    background-color: var(--white-color);
+    color: rgba(0,0,0,.87);
+    padding: 0 2px;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 8px;
+    flex: 1;
+    margin: 5px 0;
+}
+.btn-header:hover .socials-icon i{
+    color: var(--white-color);
+}
+.socials-icon i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--main-color);
+}
+.header__login input{
+    padding: 0.75rem;
+    outline: none;
+    border: 0;
+    flex: 1;
+    flex-shrink: 0;
+    filter: none;
+}
+.header__login__footer a{
+    color: var(--main-color);
+}
+.header__login__footer{
+    margin: 6px 0;
+}
+.header__login::before{
+    content: "";
+    border-width: 10px 10px;
+    border-style:  solid;   
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 68.5px;
+    top: -18px;
+    /* box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%); */
+}
+.header__login__confirm{
+    /* background-color: var(--main-color); */
+}
+.btn-header:hover {
+    width: 100%;
+    left: 0;
+    right: auto;
+    color: var(--white-color);
+    background-color: var(--btn-color);
+}
+/* header__search */
+.header__search{
+    /* display: none; */
+    width: 400px;
+    height: 156px;
+    position: absolute;
+    background-color:var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.header__search__search-bar::before{
+    content: "";
+    border-width: 10px 10px;
+    border-style:  solid;   
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 110px;
+    top: -18px;
+}
+.header__search__search-bar{
+    display: flex;
+    align-items: center;
+    border: var(--main-color) solid 0.5px;
+    border-radius: 3px;
+}
+.dropdown-menu[data-bs-popper].header__search{
+    left:auto;
+    right: -102px;
+}
+/* header cart */
+.header__cart{
+    width: 450px;
+    /* height: 310px; */
+    position: absolute;
+    background-color:var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
+    left: -308px;
+    top: 50px;
+}
+#header__cart.activate{
+    display: block;
+}
+.header__cart h2{
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    color: #fff;
+}
+.header__cart-container{
+    margin-top: 25px;
+    /* color: var(--background-color); */
+}
+.header__cart-container p{
+    margin: 15px 0 40px ;
+}
+.cart-icon{
+    font-size: 45px;
+}
+.cart-btn{
+    padding: 10px 10px;
+    width: 180px;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    border: var(--main-color) 1px solid;
+    color: var(--white-color);
+}
+.header__cart::before{
+    content: "";
+    border-width: 10px 10px;
+    border-style:  solid;   
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 24px;
+    top: -18px;
+}
+.header__cart-money{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__cart_container-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__cart-item__delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.header__cart-item__price-current{
+    color: red;
+    font-size: 1.6rem;
+}
+.header__cart-item__price-old{
+    font-size: 1.4rem;
+    color: #333;
+    text-decoration: line-through;
+}
+.header__cart-item__price-finnal{
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 900;
+    margin-right: 15px;
+}
+.header__cart-item__quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.header__cart-item__header{
+    width: 300px;
+}
+.header__cart-item__quantity span, .header__cart-item__quantity input{
+    padding:0 10px;
+    width: 30px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__cart-item__quantity span{
+    padding: 5px;
+}
+.header__cart-item__quantity input{
+    width: 40px;
+    text-align: center;
+    border: none;
+}
+.header__cart-item__quantity span:hover{
+    background-color: #c6c6c6;
+}
+.header__login2{
+    width: 250px;
+    position: absolute;
+    background-color:var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.5rem;
+    top: 50px;
+    left: -114px;
+}
+.header__login2 ul{
+    padding: 0;
+}
+.header__login2 li{
+    border-radius: 20px;
+    background-color: var(--background-color);
+    margin: 7px ;
+    padding: 5px 10px;
+}
+.header__login2 li a{
+    color: #fff;
+}
+.header__login2 li:hover {
+    background-color: var(--btn-color);
+    color: #fff;
+    border-radius: 20px;
+}
+.header__login2::before{
+    content: "";
+    border-width: 10px 10px;
+    border-style:  solid;   
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 62px;
+    top: -18px;
+    /* box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%); */
+}
+/*---------------- RESPONSIVE ------------------------*/
+@media (max-width: 1023px){
+    .header__list{
+        display: block;
+    }
+    .header__navbar{
+        display: none;
+    }
+    .header__icon__search{
+        display: none;
+    }
+    .header__search-bar{
+        display: flex;
+    }
+    .header__cart{
+        left: -350px;
+    }
+    .header__login2{
+        left:-155px
+    }
+    .header__login{
+        left: -299px;
+    }
+}
+</style>
+<script>
+
+</script>
