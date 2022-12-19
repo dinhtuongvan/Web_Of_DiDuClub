@@ -149,7 +149,7 @@ function showLogin() {
     html+='<input type="password"  placeholder="Mật khẩu" id="password">';
     html+='</div>';
     html+='<!-- <div class="btn-wrap header__login__confirm"> -->';
-    html+='<button class="btn-header"  onclick="login()">Đăng nhập</button>';
+    html+='<button class="btn-header" ><a href="./myaccount.html">Đăng nhập</a></button>';
     html+='<!-- </div> -->';
     html+='<div class="header__or">';
     html+='<div class="line"></div>';
