@@ -13,6 +13,15 @@
     --grey: #ADA9A9;
     --red: rgb(233, 15, 15);
 }
+.mgl-12{
+    margin-left: -12px;
+}
+.mgl_11{
+    margin-left: 11px;
+}
+.mgl-9{
+    margin-left: -9px;
+}
 .form-control{
     font-size: 1.6rem;
 }
@@ -39,7 +48,7 @@ a{
 .col__right--title{
     font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--darkbrown);
+    color: #000;
     position: relative;
 }
 
@@ -59,7 +68,7 @@ a{
 .form__guingay{
     background-color: initial;
     font-weight: bold;
-    margin-left: auto; 
+    margin-left: 14px; 
     border: 1px solid  var(--darkbrown);
     padding-left: 15px; 
     padding-right: 15px;
@@ -67,12 +76,12 @@ a{
     padding-bottom: 3px;
 } 
 .form__guingay:hover{
-    background-color: var(--darkbrown);
+    background-color: #000;
     color: white;
 } 
 .form__guingay:active{
     opacity: 0.7;
-    background-color: var(--darkpink);
+    background-color: #000;
 } 
 .decoration--underline{
     text-decoration: underline overline;
