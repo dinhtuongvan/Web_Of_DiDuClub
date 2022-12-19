@@ -1,18 +1,10 @@
 *{
 }
-:root {
-    --darkpink: #b8a898;
-    --lightpink: #d2beb4;
-    --darkbrown: #6B4932;
-    --black: black;
-    --white: #ffffff;
-    --green: rgb(82, 155, 115);
-  }
   .breadcrumb{
-    background-color: var(--lightpink);
     padding: 5px ;
     font-size: 12px;
     padding-left: 70px;
+    margin-top: 100px;
   }
   .breadcrumb>li{
     font-size: 1.2rem;
