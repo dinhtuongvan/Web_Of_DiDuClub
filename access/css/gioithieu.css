@@ -10,9 +10,14 @@
   }
   
   .breadcrumb{
-    padding: 5px ;
+    background: #000;
+    padding: 5px;
     padding-left: 70px;
-    margin-top: 200px;
+    margin-top: 135px;
+}
+
+.breadcrumb-item.active{
+    color: papayawhip;
 }
 .breadcrumb>li a{
     font-size: 1.2rem;
@@ -20,8 +25,12 @@
 .breadcrumb>li{
     font-size: 1.2rem;
 }
+
+.infomation{
+    margin-bottom: 40px;
+}
 a{
-    color: var(--black);
+    color: #fff;
     text-decoration: none;
 }
 .content-bold{

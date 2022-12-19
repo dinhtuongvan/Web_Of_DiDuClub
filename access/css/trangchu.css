@@ -504,7 +504,7 @@ a{
 }
 
 .container-fluid{
-    margin-top: 45px;
+    /* margin-top: 45px; */
 }
 .box-banner-info{
     position: absolute;

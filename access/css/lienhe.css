@@ -4,21 +4,33 @@
     font-size: 1.2rem;;
     font-family: Quicksand;
 }
+.mgt_20{
+    margin-top: 20px;
+}
 .form-control{
     font-size: 1.6rem;
 }
 .breadcrumb{
-    padding: 5px ;
+    padding: 5px;
     font-size: 1.6rem;
     padding-left: 70px;
-    margin-top: 170px;
+    margin-top: 135px;
+    background: #000;
 }
 
 .breadcrumb>li{
     font-size: 1.2rem;
 }
+
+.breadcrumb-item.active {
+    color: papayawhip;
+}
+
+.introduce{
+    margin-bottom: 40px;
+}
 a{
-    color: var(--black);
+    color: #fff;
     text-decoration: none;
 }
 .content-bold{
@@ -35,7 +47,7 @@ a{
     margin-top: 35px;
 }
 a{
-    color: black;
+    color: #fff;
 } 
 .bar{
     position: absolute;
