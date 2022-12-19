@@ -280,7 +280,7 @@ function toProductPage(a) {
           break;
       }
   sessionStorage.setItem('category',ma);
-  window.location='./trangsp.html';
+  window.location='./sanpham.html';
 }
 function pSearch(){
   let pS=document.getElementById('search-bar__input').value;
@@ -289,21 +289,14 @@ function pSearch(){
 function pSearch1(){
   let pS=document.getElementById('search-bar__input1').value;
   sessionStorage.setItem('pSearch',pS); 
-  window.location='./trangsp.html';
+  window.location='./sanpham.html';
 }
 function toGioHang(){
-  if(sessionStorage.getItem('checkLogin')==1){
     window.location='./giohangtrong.html'
-  }else{
-    alert("Bạn chưa đăng nhập")
-  }
+
 }
 function toThanhToan(){
-  if(sessionStorage.getItem('checkLogin')==1){
     window.location='./thanhtoan.html'
-  }else{
-    alert("Bạn chưa đăng nhập")
-  }
 }
 
 //chuyển động header
