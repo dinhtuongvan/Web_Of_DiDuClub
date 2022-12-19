@@ -41,12 +41,12 @@
     border-radius: 10px;
 } 
 .thanhtoan:hover{
-    background-color: #fff;
-    color: var(--white);
+    opacity: 0.8;
+    cursor: pointer;
 } 
 .thanhtoan:active{
     opacity: 0.7;
-    background-color: var(--darkpink);
+    background-color: #000;
 } 
 a{
     text-decoration: none;

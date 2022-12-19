@@ -39,7 +39,7 @@ textarea.form-control,input.form-control,select.form-select {
 h5{
     font-size: 3rem;
     text-align: left;
-    color: var(--darkbrown);
+    color: #000;
     font-weight: bolder;
 }
 h4{
@@ -48,14 +48,19 @@ h4{
     text-align: left;
 }
 a{
-    color: var(--black);
+    color: #000;
     text-decoration: none;
 }
+
+.button--muahang:hover a{
+    color: #fff;
+}
+
 .button--gui__position{
     text-align: right;
 }
 .button--gui{
-    margin-bottom: 20px;
+   
     background-color: initial;
     text-align: center;
     font-weight: bold;
@@ -68,12 +73,13 @@ a{
     
 } 
 .button--gui:hover{
-    background-color: var(--darkbrown);
+    background-color: #000;
     color: white;
 } 
 .button--gui:active{
+    color: #fff;
     opacity: 0.7;
-    background-color: var(--darkpink);
+    background-color: #000000de;
 } 
 .box__border{
 border: solid 1px;
@@ -133,7 +139,7 @@ padding-right: 20px;
     padding-bottom: 10px;
 } 
 .button--muahang:hover{
-    background-color: var(--darkbrown);
+    background-color: #000;
     color: white;
 } 
 .button--muahang:active{
@@ -180,11 +186,11 @@ margin-top: -10px;
     display: none;
 }
 .form-check-input:focus{
-    box-shadow: 0 0 0 0.25rem rgb(210 190 180)
+    box-shadow: 0 0 0 0.25rem #000
 }
 .form-check-input:checked{
-    background-color: rgb(210 190 180);
-    border-color: rgb(210 190 180);
+    background-color: #333;
+    border-color: #333;
 }
 .modal-img{
     display: flex;
@@ -200,7 +206,7 @@ margin-top: -10px;
 .modal-footer .btn{
     width: 60%;
     font-size: 1.6rem;
-    background-color: rgb(210 190 180);
+    background-color: #000;
     border: none;
     font-weight: 500;
     border-radius: 30px;
